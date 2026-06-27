@@ -60,7 +60,7 @@ fun AppSearchBar(modifier: Modifier, viewModel: CountryViewModel){
 
     var query by remember { mutableStateOf("") }
     var expanded by remember { mutableStateOf(false) }
-
+    /*DockedSearchBar Component is docked to Top-Center Alignment*/
     Box(modifier = modifier.padding(16.dp)){
         DockedSearchBar(
             modifier = Modifier.align(Alignment.TopCenter),
