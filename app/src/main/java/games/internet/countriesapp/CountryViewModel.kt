@@ -48,6 +48,7 @@ class CountryViewModel : ViewModel() {
                 stats = stats.copy(isLoading = false)
             } catch (e: Exception){
                 Log.e("COUNTRY_DEBUG", "Error fetching data", e)
+                /*See Logcat*/
                 stats = stats.copy(
                     isLoading = false,
                     errorMessage = e.message
@@ -60,4 +61,4 @@ class CountryViewModel : ViewModel() {
 data class DataStats(
     var isLoading: Boolean,
     var errorMessage: String?
-)
+)/*Alternatively use sealed interface*/
