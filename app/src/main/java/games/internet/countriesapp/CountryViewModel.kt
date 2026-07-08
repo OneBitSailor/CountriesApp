@@ -8,7 +8,7 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
-
+/*The project does not have seperate repository*/
 class CountryViewModel : ViewModel() {
 
     var countries by mutableStateOf<List<Country>>(emptyList())
@@ -61,4 +61,4 @@ class CountryViewModel : ViewModel() {
 data class DataStats(
     var isLoading: Boolean,
     var errorMessage: String?
-)/*Alternatively use sealed interface*/
+)
